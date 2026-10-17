@@ -57,19 +57,28 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap">
-    <div>
+    <div class="hero-head">
       <span class="pill dark" style="background:rgba(255,255,255,.12)">UX case study · MA UX Design</span>
       <h1 style="margin-top:22px">Little <em>Garden</em></h1>
-      <p class="tag hero-in">A beginner-first plant care app that helps people in Dhaka keep the plants they buy alive.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px">
-        <a class="btn p" href="#flow">See the Scan flow</a>
+      <p class="tag hero-in">A plant care app made for beginners in Dhaka, so their new plants stay healthy.</p>
+      <p class="proof">Sole designer <i>·</i> 30 surveyed, 5 interviewed, 10 tested <i>·</i> 3 contrast failures found and fixed <i>·</i> Scan flow added from one user comment</p>
+    </div>
+    <div class="hero-cta">
+      <div class="cta-row">
+        <a class="btn p xl" href="#flow">See the Scan flow <span aria-hidden="true">→</span></a>
         <a class="btn o" href="#overview">Read the case study</a>
       </div>
+      <nav class="qlinks" aria-label="Quick links">
+        <a href="#decision"><span>Key insight</span></a>
+        <a href="#flow"><span>Scan flow</span></a>
+        <a href="#audit"><span>Accessibility audit</span></a>
+      </nav>
       <div class="meta">
         <span>Designer<b>Nusrat Afsana Usha</b></span>
         <span>Role<b>Research · UX · UI</b></span>
         <span>Platform<b>Mobile (iOS / Android)</b></span>
         <span>Tools<b>Figma · Miro · Google Forms</b></span>
+        <span>Prototype<b><a class="flink" href="https://www.figma.com/design/mlbncDMXrbmkk7OeFDGG1m/Little-Garden?node-id=17-2&amp;p=f&amp;t=VykViEJcn5XY49Hd-0" target="_blank" rel="noopener">Open in Figma <span aria-hidden="true">↗</span><span class="sr">(opens in a new tab)</span></a></b></span>
       </div>
     </div>
     <div class="hero-phones" aria-hidden="true">
@@ -78,6 +87,23 @@
     </div>
   </div>
 </section>
+
+<!-- SUMMARY + PROCESS STRIP -->
+<div class="band">
+  <div class="wrap">
+    <p class="summary">People in Dhaka buy plants but lose them: 89.7% have lost one. I designed a beginner-first app built around daily reminders, plain-language care and a camera that identifies plants. Testing reshaped the flow twice, and an accessibility audit fixed the colour contrast problems.</p>
+    <nav class="stages" aria-label="Design process in 5 stages">
+      <h2 class="stages-t">Design process in 5 stages</h2>
+      <ol>
+        <li><a href="#research"><b>Empathise</b><span>30 surveys</span><span>5 interviews</span></a></li>
+        <li><a href="#define"><b>Define</b><span>2 personas</span><span>Journey map</span></a></li>
+        <li><a href="#ideate"><b>Ideate</b><span>SCAMPER</span><span>MoSCoW</span></a></li>
+        <li><a href="#ui"><b>Prototype</b><span>Wireframes</span><span>Hi-fi + system</span></a></li>
+        <li><a href="#testing"><b>Test</b><span>2 test rounds</span><span>Accessibility audit</span></a></li>
+      </ol>
+    </nav>
+  </div>
+</div>
 
 <!-- OVERVIEW -->
 <section id="overview">
@@ -118,21 +144,14 @@
       </div>
     </div>
 
-    <h3 style="margin:56px 0 16px">Process</h3>
-    <div class="dd">
-      <div><h4>Discover</h4><ul><li>Desk research</li><li>Benchmarking of 8 apps</li><li>Survey, 30 people</li><li>5 interviews</li></ul></div>
-      <div><h4>Define</h4><ul><li>Two personas</li><li>Journey map</li><li>Problem statement</li><li>How Might We</li></ul></div>
-      <div><h4>Develop</h4><ul><li>Affinity mapping and SCAMPER</li><li>Storyboards</li><li>Wireframes</li><li>Design system</li></ul></div>
-      <div><h4>Deliver</h4><ul><li>Hi-fi prototype</li><li>Two testing rounds</li><li>Accessibility audit</li><li>Iteration 3 refinements</li></ul></div>
-    </div>
-  </div>
+        </div>
 </section>
 
 <!-- RESEARCH -->
 <section id="research" class="tint">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow"><b>02</b> Discover</div>
+      <div class="eyebrow"><b>02</b> Empathise</div>
       <h2>Research &amp; discovery</h2>
       <p>Three lenses: what the literature says, what the market offers, and what Dhaka residents told me directly.</p>
     </div>
@@ -201,7 +220,7 @@
       <div class="s1">Many like decorating their home with plants</div><div class="s2">Some use plants for health benefits</div><div class="s3">Step-by-step tips are preferred</div><div class="s4">Users often depend on guesswork</div><div class="s5">It gives a sense of relaxation</div>
     </div>
 
-    <h3 style="margin:56px 0 18px">From research to decision</h3>
+    <h3 id="decision" style="margin:56px 0 18px">From research to decision</h3>
     <div class="tablewrap"><table>
       <thead><tr><th>Finding</th><th>Insight</th><th>Design decision</th></tr></thead>
       <tbody>
@@ -442,7 +461,7 @@
 <section id="ideate" class="tint">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow"><b>07</b> Develop</div>
+      <div class="eyebrow"><b>07</b> Ideate</div>
       <h2>Ideation and feature priorities</h2>
       <p>Brainstorming, SCAMPER and storyboarding generated the options. Prioritisation narrowed them to what a beginner needs first.</p>
     </div>
@@ -527,7 +546,7 @@
     </div>
     <p style="margin-top:18px;max-width:70ch">Colour distribution follows 60-30-10 (Lidwell et al., 2010): neutrals about 60%, greens about 30% for structure, and Tertiary Green plus Terracotta about 10% for fills and status. <b>Rule:</b> Tertiary Green and Terracotta are fills only. Text on them is dark.</p>
 
-    <h3 style="margin:48px 0 16px">What the audit found</h3>
+    <h3 id="audit" style="margin:48px 0 16px">What the audit found</h3>
     <div class="tablewrap"><table class="cr-table">
       <thead><tr><th>Combination</th><th>Ratio</th><th>Result</th><th>Fix</th></tr></thead>
       <tbody>
@@ -589,7 +608,7 @@
 <section id="ui" class="tint">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow"><b>09</b> Deliver</div>
+      <div class="eyebrow"><b>09</b> Prototype</div>
       <h2>High-fidelity UI</h2>
       <p>Eight connected screens, built on the system and tested with five participants. Each decision below traces back to research.</p>
     </div>
@@ -654,7 +673,7 @@
 <section id="testing" class="tint">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow"><b>10</b> Test &amp; iterate</div>
+      <div class="eyebrow"><b>10</b> Test</div>
       <h2>Usability testing and iterations</h2>
       <p>Two completed rounds with five participants each, using a think-aloud protocol (Nielsen, 1994), then an accessibility and heuristic audit that produced the final refinements.</p>
     </div>
