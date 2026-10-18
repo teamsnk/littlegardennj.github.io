@@ -504,3 +504,6 @@ html.anim .hero .proof{animation:rise .9s cubic-bezier(.2,.7,.2,1) .4s both}
 html,body{overflow-x:clip}
 .hero-cta{align-self:start;padding-top:6px}
 @media(max-width:900px){.hero-cta{padding-top:0}}
+
+/* Figma screens carry their own rounded corners */
+.shot img[src*="assets/figma"]{border:0;border-radius:0;box-shadow:none;background:none;filter:drop-shadow(0 10px 22px rgba(0,70,33,.16))}
